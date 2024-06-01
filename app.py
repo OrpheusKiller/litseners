@@ -1,4 +1,4 @@
-# from pyautogui import locateOnScreen, click, center
+from pyautogui import locateOnScreen, click, center
 from flask import Flask, render_template
 from webbrowser import open
 
