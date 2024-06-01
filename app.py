@@ -1,5 +1,4 @@
-from pyautogui import locateOnScreen, click, center
-from webbrowser import open
+
 from flask import Flask
 
 app = Flask(__name__)
