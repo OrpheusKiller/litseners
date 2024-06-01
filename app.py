@@ -1,6 +1,7 @@
 from pyautogui import locateOnScreen, click, center
 from flask import Flask, render_template
 from webbrowser import open
+from time import sleep
 
 app = Flask(__name__)
 
@@ -13,12 +14,12 @@ def frontend():
 def litseners():
     open("https://www.youtube.com/watch?v=oWsnhdwJ_Vw")
 
-    while True:
-        try:
-            locateOnScreen("static\\images\\logo.png", confidence=0.9)
-            break
-        except:
-            continue
+    # while True:
+    #     try:
+    #         locateOnScreen("static\\images\\logo.png", confidence=0.9)
+    #         break
+    #     except:
+    #         continue
 
     try:
         if locateOnScreen("static\\images\\subscribe.png", confidence=0.9):
