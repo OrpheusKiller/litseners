@@ -5,3 +5,8 @@ app = Flask(__name__)
 @app.route("/")
 def frontend():
     return render_template('index.html')
+
+@app.route("/litseners")
+
+def litseners():
+    return "jai mata di"
