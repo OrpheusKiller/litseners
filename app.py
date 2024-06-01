@@ -1,7 +1,6 @@
 # from pyautogui import locateOnScreen, click, center
 from flask import Flask, render_template
-# from webbrowser import open
-# from time import sleep
+from webbrowser import open
 
 app = Flask(__name__)
 
