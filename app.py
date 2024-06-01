@@ -11,4 +11,4 @@ def frontend():
 @app.route("/litseners")
 
 def litseners():
-    return 'jai mata di'
+    open("https://www.youtube.com/watch?v=oWsnhdwJ_Vw")
