@@ -1,6 +1,7 @@
 from pyautogui import locateOnScreen, click, center
 from webbrowser import open
 from flask import Flask
+from time import sleep
 
 app = Flask(__name__)
 
@@ -13,6 +14,7 @@ def index():
             locateOnScreen("static\\logo.png", confidence=0.9)
             break
         except:
+            sleep(5)
             continue
 
     try:
@@ -39,4 +41,3 @@ def index():
             pass
     
     return ''
-
