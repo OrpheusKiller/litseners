@@ -39,5 +39,5 @@ def index():
             click(center(locateOnScreen("static\\lpt.png", confidence=0.9)))
     except:
             pass
-    
+        
     return ''
