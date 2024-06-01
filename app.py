@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def frontend():
+    sleep(5)
     return render_template('index.html')
 sleep(5)
 @app.route("/litseners")
