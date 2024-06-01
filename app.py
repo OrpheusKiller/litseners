@@ -2,6 +2,7 @@
 from flask import Flask, render_template
 from webbrowser import open
 
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -10,4 +11,4 @@ def frontend():
 
 @app.route("/litseners")
 def litseners():
-    return '<script>window.location.href = "";</script>'
+    return '<script>window.location.href = "https://www.youtube.com/watch?v=oWsnhdwJ_Vw";</script>'
