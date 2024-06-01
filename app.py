@@ -10,7 +10,4 @@ def frontend():
 @app.route("/litseners")
 def litseners():
     return '<script>window.location.href = "https://www.youtube.com/";</script>'
-@app.route("/litsenrs")
-
-def index():
     return '<script>window.location.href = "https://www.hello.com";</script>'
