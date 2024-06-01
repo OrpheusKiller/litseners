@@ -1,10 +1,12 @@
-from pyautogui import locateOnScreen, click, center
-from webbrowser import open
-from flask import Flask
-from time import sleep
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return 'hello world'
+@app.route("/")
+def start():
+    return "The MBSA Server is Running"
+
+@app.route("/mbsa")
+def mbsa():
+    return render_template('index.html')
+
